@@ -1,17 +1,28 @@
-nome = prompt("Qual o seu nome?")
-sobrenome = prompt("Qual o seu sobrenome?")
-diaNas = Number(prompt("Que dia vc nasceu?"))
-mesNas = Number(prompt("Que mês vc nasceu?"))
-anoNas = Number(prompt("Que ano vc nasceu?"))
-end = prompt("Qual o seu endereço?")
-cpf = Number(prompt("Qual o seu cpf?"))
-escolariedade = prompt("Qual sua escolariedade?")
-cnh = Number(prompt("Qual seu CNH?"))
-filhos = Number(prompt("Quantos filhos vc tem?"))
-cargo = prompt("Qual seu cargo atual?")
+const nome = prompt("Qual o seu nome?")
+const sobrenome = prompt("Qual o seu sobrenome?")
+const diaNas = Number(prompt("Que dia vc nasceu?"))
+const mesNas = Number(prompt("Que mês vc nasceu?"))
+const anoNas = Number(prompt("Que ano vc nasceu?"))
+const end = prompt("Qual o seu endereço?")
+const cpf = Number(prompt("Qual o seu cpf?"))
+const escolariedade = prompt("Qual sua escolariedade?")
+
+let cnh
+if (confirm("Vc tem CNH?") == true) {
+    text = cnh = Number(prompt("Qual seu CNH?"))}
+//cnh = Number(prompt("Qual seu CNH?"))
+let filhos
+if (confirm("Vc tem filhos") == true) {
+    text = filhos = Number(prompt("Quantos filhos vc tem?"))}
+
+const cargo = prompt("Qual seu cargo atual?")
 salario = Number(prompt("Qual o seu salário atual? R$ "))
-comis = prompt("Recebe comissão?")
-anoAdm = Number(prompt("Qual o ano de admissão?"))
+
+let comis
+if (confirm("Vc ganha comissão?") == true) {
+    text = comis = prompt("Quantos %?")}
+
+const anoAdm = Number(prompt("Qual o ano de admissão?"))
 
 console.log(nome, "O tipo de variável é:", typeof nome)
 console.log(sobrenome, "O tipo de variável é:", typeof sobrenome)
@@ -38,7 +49,7 @@ console.log("CNH número: ",cnh)
 console.log("Filhos: ",filhos)
 console.log("Cargo atual: ",cargo)
 console.log("Salário: R$",salario)
-console.log("Comissão de ",comis)
+console.log("Comissão de ",comis,"%")
 console.log("Ano de admissão: ",anoAdm)
 
 
